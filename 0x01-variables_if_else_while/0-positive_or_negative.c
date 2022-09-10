@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <time.h>
 
+/**
+ * main - it prints random number and checks its value
+ * Return: Always 0 (Successful)
+ */
+
 int main(void)
 {
   int n;

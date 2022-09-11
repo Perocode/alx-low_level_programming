@@ -7,19 +7,19 @@
 
 int main(void)
 {
-  char al = 'a';
-  char alp = 'A';
+char al = 'a';
+char alp = 'A';
 
-  while (al <= 'z')
-    {
-      putchar(al);
-      al++;
-    }
-  while (alp <= 'Z')
-    {
-      putchar(alp);
-      alp++;
-    }
-  putchar('\n');
-  return (0);
+while (al <= 'z')
+{
+putchar(al);
+al++;
+}
+while (alp <= 'Z')
+{
+putchar(alp);
+alp++;
+}
+putchar('\n');
+return (0);
 }

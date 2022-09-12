@@ -10,14 +10,14 @@
 int main(void)
 {
 int ba = 0;
-char bas = 'A';
+char bas = 'a';
 
 while (ba <= 10)
 {
 putchar(ba%10 + '0');
 ba++;
 }
-while (bas <= 'F')
+while (bas <= 'f')
 {
 putchar(bas);
 bas++;

@@ -12,15 +12,16 @@ int main(void)
 int ba = 0;
 char bas = 'a';
 
-while (ba <= 10)
+while (ba < 10)
 {
-putchar(ba%10 + '0');
+putchar(ba % 10 + '0');
 ba++;
 }
 while (bas <= 'f')
 {
+
 putchar(bas);
-bas++;
+++bas;
 }
 putchar('\n');
 return (0);

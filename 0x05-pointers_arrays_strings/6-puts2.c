@@ -16,7 +16,7 @@ if (x % 2 == 0)
 {
 _putchar(*(str + x));
 }
-x++;
+
 }
 _putchar('\n');
 }

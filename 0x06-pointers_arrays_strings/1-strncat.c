@@ -4,7 +4,7 @@
  * _strncat -helps to concatenate two strings
  * @dest: first string
  * @src: second string
- * @n:
+ * @n: number of characters to concatenate
  * Return: pointer is returned
  */
 
@@ -16,7 +16,7 @@ while (dest[a] != '\0')
 {
 a++;
 }
-while (src[b] != '\0' ||  b < n)
+while (src[b] != '\0' &&  b < n)
 {
 dest[a] = src[b];
 a++;

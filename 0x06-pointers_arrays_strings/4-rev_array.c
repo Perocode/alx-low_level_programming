@@ -9,21 +9,13 @@
 
 void reverse_array(int *a, int n)
 {
-int x, temp, check;
+int x, temp, y;
 
-if (n % 2 == 0)
-{
-check = n;
-}
-else
-{
-check = n - 1;
-}
-for (x = 0; x < check / 2; x++)
+y = n - 1;
+for (x = 0; x < n / 2; x++)
 {
 temp = a[x];
-a[x] = a[n - x];
-a[n - 1] = temp;
-n--;
+a[x] = a[y];
+a[y] = temp;
 }
 }

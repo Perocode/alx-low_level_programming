@@ -1,0 +1,40 @@
+#include "main.h"
+
+/**
+ * is_pri - returns 1 if the input is a prime number,
+ * otherwise return 0;
+ * @n: number to be checked
+ * @i: tester
+ * Return: int
+ */
+
+int is_pri(int n, int i)
+{
+if (n <= 1)
+{
+return (0);
+}
+else if (i > 1 && n % i == 0)
+{
+return (0);
+}
+else if ((n / i) < i)
+{
+return (1);
+}
+else
+{
+return (is_pri(n, i + 1));
+}
+}
+
+/**
+ * is_prime_number - return the the testing function
+ * @n: number to be checked
+ * Return: int
+ */
+
+int is_prime_number(int n)
+{
+return (is_pri(n, 1));
+}

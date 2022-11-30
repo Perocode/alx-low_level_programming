@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+ /**
+  * main - generates random passwords 
+  * Return: Always 0 
+  */
+
+ int main(void)
+ {
+   int sum;
+   char a;
+
+   srand(time(NULL));
+   while (sum <= 4536)
+     {
+       a = rand() % 218;
+       sum = sum + a;
+       putchar(a);
+     }
+   putchar(4754 - sum);
+   return (0);
+ }
